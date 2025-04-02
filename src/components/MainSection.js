@@ -110,8 +110,8 @@ function MainSection() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
       >
-        <Names>정한솔  ·  김유진</Names>
-        <DateTime>2025년 8월 9일 토요일 오후 12시 30분</DateTime>
+        <Names>김철수  ·  김영희</Names>
+        <DateTime>2025년 10월 9일 토요일 오후 12시 30분</DateTime>
         <Location>아펠가모 반포점 LL</Location>
       </InfoContainer>
     </Section>

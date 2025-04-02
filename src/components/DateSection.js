@@ -183,8 +183,8 @@ function DateSection() {
         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ duration: 1 }}
       >
-        <WeddingDate>2025.08.09</WeddingDate>
-        <WeddingTime>금요일 오후 12시 30분</WeddingTime>
+        <WeddingDate>2025.10.09</WeddingDate>
+        <WeddingTime>토요일 오후 12시 30분</WeddingTime>
         
         <Calendar>
           <WeekDays style={{ fontFamily: 'Gabia Gosran' }}>
@@ -234,7 +234,7 @@ function DateSection() {
               <div className="label" style={{ fontFamily: 'Gabia Gosran'}}>SEC</div>
             </CountdownItem>
           </CountdownGrid>
-          <Message>한솔 💚 유진의 결혼식이 <span style={{ color: 'green' }}>{countdown.days}</span>일 남았습니다.</Message>
+          <Message>철수 💚 영희희의 결혼식이 <span style={{ color: 'green' }}>{countdown.days}</span>일 남았습니다.</Message>
         </CountdownContainer>
       </DateContainer>
     </Section>

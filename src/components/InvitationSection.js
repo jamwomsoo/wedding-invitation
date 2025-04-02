@@ -92,8 +92,8 @@ function InvitationSection() {
         </Message>
         <FlowerImage />
         <Names>
-          정이원 · 신원예 <span style={{ fontSize: '13px', fontWeight: '300' }}>의 장남</span> 한솔<br/>
-          김진석 · 이창섭 <span style={{ fontSize: '13px', fontWeight: '300' }}>의 장녀</span> 유진
+          XXX · XXXX <span style={{ fontSize: '13px', fontWeight: '300' }}>의 장남</span> XX<br/>
+          XXX · XXX <span style={{ fontSize: '13px', fontWeight: '300' }}>의 장녀</span> XX
         </Names>
       </InvitationText>
     </Section>
