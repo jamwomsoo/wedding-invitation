@@ -83,11 +83,11 @@ function Loading() {
     <LoadingWrapper>
       <Heart />
       <TextWrapper>
-        <Letter $delay={0 * 0.1}>한</Letter>
-        <Letter $delay={1 * 0.1}>솔</Letter>
+        <Letter $delay={0 * 0.1}>철</Letter>
+        <Letter $delay={1 * 0.1}>수</Letter>
         <p><Letter $delay={2 * 0.1}>&#128156;</Letter></p>
-        <Letter $delay={3 * 0.1}>유</Letter>
-        <Letter $delay={4 * 0.1}>진</Letter>
+        <Letter $delay={3 * 0.1}>영</Letter>
+        <Letter $delay={4 * 0.1}>희</Letter>
         <Letter $delay={5 * 0.1}> </Letter>
         <Letter $delay={6 * 0.1}>결</Letter>
         <Letter $delay={7 * 0.1}>혼</Letter>
