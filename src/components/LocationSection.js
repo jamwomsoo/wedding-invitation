@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import kakaoMapLogo from '../public/images/kakaomap_basic.png';  // 카카오맵 로고 import
 import naverMapLogo from '../public/images/navermap.png';  // 네이버맵 로고 import
 import tmapLogo from '../public/images/tmap.png';  // 티맵 로고 import
-import trafficControlImage from '../public/images/traffic_control.jpg';  // 교통 통제 이미지 import
+//import trafficControlImage from '../public/images/traffic_control.jpg';  // 교통 통제 이미지 import
 
 const Section = styled.section`
   height: 1300px;
