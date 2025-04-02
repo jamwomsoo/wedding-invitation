@@ -185,7 +185,7 @@ function LocationSection() {
   // const [position, setPosition] = useState({ x: 0, y: 0 });
   // const [isDragging, setIsDragging] = useState(false);
   // const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
-  const [scrollY, setScrollY] = useState(0);
+  // const [scrollY, setScrollY] = useState(0);
 
   // const handleWheel = (e) => {
   //   e.preventDefault();
@@ -268,9 +268,9 @@ function LocationSection() {
   //   }
   // };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  // const handleMouseUp = () => {
+  //   setIsDragging(false);
+  // };
 
   // const handleModalOpen = () => {
   //   setScrollY(window.scrollY); // 현재 스크롤 위치 저장
