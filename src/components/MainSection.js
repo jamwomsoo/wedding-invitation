@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import mainImage from '../public/images/KakaoTalk_20240321_154333822_01.jpg'; // 메인 이미지 import
+import mainImage from '../public/images/KakaoTalk_20250401_122047029_01.jpg'; // 메인 이미지 import
 
 const Section = styled.section`
   height: 900px;
@@ -102,7 +102,7 @@ function MainSection() {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <MainDate>2025 / 08 / 09</MainDate>
-          <SubDate>FRIDAY</SubDate>
+          <SubDate>Saturday</SubDate>
         </DateWrapper>
       </ImageContainer>
       <InfoContainer
@@ -111,8 +111,8 @@ function MainSection() {
         transition={{ duration: 1, delay: 1 }}
       >
         <Names>정한솔  ·  김유진</Names>
-        <DateTime>2025년 8월 9일 금요일 오후 12시 30분</DateTime>
-        <Location>아펠가모 반포점 2F</Location>
+        <DateTime>2025년 8월 9일 토요일 오후 12시 30분</DateTime>
+        <Location>아펠가모 반포점 LL</Location>
       </InfoContainer>
     </Section>
   );

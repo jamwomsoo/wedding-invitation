@@ -59,9 +59,22 @@ function Loading() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false);  // 3초 후 로딩 화면 사라짐
-    }, 3000); // 3000ms = 3초
+    }, 2000);
 
-    return () => clearTimeout(timer);  // 컴포넌트 언마운트 시 타이머 정리
+    // 터치 이벤트 핸들러 추가
+    const handleTouch = () => {
+      setIsVisible(false);
+    };
+
+    // 모바일 디바이스인 경우에만 터치 이벤트 리스너 추가
+    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+      document.addEventListener('touchstart', handleTouch, { once: true });
+    }
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('touchstart', handleTouch);
+    };
   }, []);
 
   if (!isVisible) return null;  // 로딩 화면이 사라지면 null 반환
@@ -72,7 +85,7 @@ function Loading() {
       <TextWrapper>
         <Letter $delay={0 * 0.1}>한</Letter>
         <Letter $delay={1 * 0.1}>솔</Letter>
-        <p><Letter $delay={2 * 0.1}>&#128155;</Letter></p>
+        <p><Letter $delay={2 * 0.1}>&#128156;</Letter></p>
         <Letter $delay={3 * 0.1}>유</Letter>
         <Letter $delay={4 * 0.1}>진</Letter>
         <Letter $delay={5 * 0.1}> </Letter>

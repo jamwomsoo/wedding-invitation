@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import footerImage from '../public/images/KakaoTalk_20240321_154333822_01.jpg'; // footer에 사용할 이미지 경로
+import footerImage from '../public/images/KakaoTalk_20250321_154333822_05.jpg'; // footer에 사용할 이미지 경로
 
 const FooterContainer = styled.section`
   width: 100%;

@@ -18,12 +18,13 @@ import img3 from '../public/images/KakaoTalk_20250321_154333822_03.jpg';
 import img4 from '../public/images/KakaoTalk_20250321_154333822_04.jpg';
 import img5 from '../public/images/KakaoTalk_20250321_154333822_05.jpg';
 import img6 from '../public/images/KakaoTalk_20250321_154333822_06.jpg';
-import img7 from '../public/images/KakaoTalk_20250321_154333822.jpg';
-// import img9 from '../public/images/KakaoTalk_Photo_2024-12-01-17-18-08 009.jpeg';
-// import img10 from '../public/images/KakaoTalk_Photo_2024-12-01-17-18-08 010.jpeg';
-// import img12 from '../public/images/KakaoTalk_Photo_2024-12-01-17-18-08 011.jpeg';
-// import img11 from '../public/images/KakaoTalk_Photo_2024-12-01-17-18-08 012.jpeg';
-// import img13 from '../public/images/KakaoTalk_Photo_2024-12-01-17-18-08 013.jpeg';
+//import img7 from '../public/images/KakaoTalk_20250321_154333822_07.jpg';
+import img8 from '../public/images/KakaoTalk_20250401_122047029.jpg';
+import img9 from '../public/images/KakaoTalk_20250401_122047029_02.jpg';
+import img10 from '../public/images/KakaoTalk_20250401_122047029_03.jpg';
+import img12 from '../public/images/KakaoTalk_20250401_122047029_04.jpg';
+import img11 from '../public/images/KakaoTalk_20250401_122047029_05.jpg';
+import img13 from '../public/images/KakaoTalk_20250401_122047029_06.jpg';
 
 const Section = styled.section`
   height: 800px;
@@ -217,7 +218,7 @@ function GallerySection() {
     threshold: 0.1,
   });
 
-  const images = [img1, img2, img3, img4, img5, img6, img7];
+  const images = [img1, img2, img3, img4, img5, img6, img8, img9, img10, img11, img12, img13];
 
   const NextArrow = (props) => {
     const { onClick } = props;

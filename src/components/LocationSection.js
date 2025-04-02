@@ -8,7 +8,7 @@ import tmapLogo from '../public/images/tmap.png';  // 티맵 로고 import
 import trafficControlImage from '../public/images/traffic_control.jpg';  // 교통 통제 이미지 import
 
 const Section = styled.section`
-  height: 1850px;
+  height: 1300px;
   padding: 150px 20px;
   background-color: #fdfdf5;
   touch-action: pan-y;  // 수직(y축) 스크롤만 허용
@@ -305,20 +305,20 @@ function LocationSection() {
       const script = document.createElement('script');
       script.async = true;
       script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.REACT_APP_KAKAO_API_KEY}&autoload=false`;
-      
+
       script.onload = () => {
         window.kakao.maps.load(() => {
           if (!mapRef.current) return;
 
           const container = mapRef.current;
           const options = {
-            center: new window.kakao.maps.LatLng(37.5085, 126.9947),
+            center: new window.kakao.maps.LatLng(37.50069999999999, 127.003259),
             level: 2,
           };
           
           const map = new window.kakao.maps.Map(container, options);
           
-          const markerPosition = new window.kakao.maps.LatLng(37.5085, 126.9947);
+          const markerPosition = new window.kakao.maps.LatLng(37.50069999999999, 127.003259);
           const marker = new window.kakao.maps.Marker({
             position: markerPosition
           });
@@ -354,14 +354,14 @@ function LocationSection() {
         >
           <VenueName>아펠가모 반포점</VenueName>
           <Address>
-            서울특별시 서초구 서초대로 74길 33<br />
-            아펠가모 반포점 2층
+            대한민국 서울특별시 서초구 반포대로 235<br />
+            아펠가모 반포점 LL층
           </Address>
           
 
           <div style={{ display: 'flex', justifyContent: 'center', marginLeft: '-20px', marginRight: '-20px' }}>
             <MapButton 
-              href="https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=%2C%2C498828%2C1113619&rt1=&rt2=%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8+%EB%B0%98%ED%8F%AC%EC%A0%90&rtIds=%2C&rtTypes=%2C" 
+              href="https://map.kakao.com/link/to/아펠가모,37.50069999999999,127.003259" 
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -370,8 +370,8 @@ function LocationSection() {
             </MapButton>
             <MapButton 
               href={isIOS
-                ? "nmap://place?lat=37.5085&lng=126.9947&name=아펠가모 반포점"
-                : "https://map.naver.com/p/search/%EC%95%84%ED%8E%A0%EA%B0%80%EB%AA%A8%20%EB%B0%98%ED%8F%AC/place/1766687615?c=15.00,0,0,0,dh&placePath=%3Fentry%253Dbmp"
+                ? "nmap://place?lat=37.50069999999999&lng=127.003259&name=아펠가모 반포점"
+                : "https://map.naver.com/v5/search/서울%20서초구%20반포대로%20235"
               }
               target="_self"
               rel="noopener noreferrer"
@@ -380,7 +380,7 @@ function LocationSection() {
               네이버맵
             </MapButton>
             <MapButton 
-              href="tmap://route?goalname=아펠가모 반포점&goalx=126.9947&goaly=37.5085" 
+              href="tmap://route?goalname=아펠가모 반포점&goalx=127.003259&goaly=37.50069999999999" 
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -393,8 +393,8 @@ function LocationSection() {
             <DirectionSection>
               <DirectionTitle>지하철 이용 시</DirectionTitle>
               <DirectionText>
-                • 반포역 4번출구 (9호선)<br />
-                • 고속터미널역 5번출구 (3호선, 7호선, 9호선)
+                {/* • 반포역 4번출구 (3호선)<br /> */}
+                • 고속터미널역 5번 출구에서 252m (3호선, 7호선, 9호선)
               </DirectionText>
             </DirectionSection>
 

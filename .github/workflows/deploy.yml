@@ -26,7 +26,7 @@ jobs:
 
     - name: Build
       env:
-        REACT_APP_KAKAO_API_KEY: ${{ secrets.REACT_APP_KAKAO_API_KEY }}
+        REACT_APP_KAKAO_API_KEY: 74d41fc2ea3648b0d3a741159dcf0015
       run: npm run build
 
     - name: Deploy
